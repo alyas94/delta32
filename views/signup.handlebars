@@ -1,0 +1,102 @@
+<link rel="stylesheet" href="assets/css/signup.css">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+<script type="text/javascript" src="assets/js/index.js"></script>
+
+<script type="text/javascript" src="/assets/js/dashboard.js"></script>
+
+<div class="no-gutter">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand ml-1" href="/">Delta 32</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mr-4">
+                <li class="nav-item">
+                    <a class="nav-link" href="/api/videos/featured">Featured
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Categories
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/api/videos/category/medical">Medical</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/api/videos/category/environmental">Environmental</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/api/videos/category/lifestyle">Lifestyle</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/#mission">Mission</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#zbwid-2de1d0d9">Contact Us</a>
+                </li>
+            </ul>
+
+            <form class="form-inline my-2 my-lg-0">
+                <select class="search_bar" data-placeholder="Search" type="search" placeholder="Search" aria-label="Search" style="width: 200px">
+                    <option></option>
+                </select>
+                <button class="btn btn-sm btn-outline-success my-2 my-sm-0" id="nav_search_btn" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+    </nav>
+</div>
+
+
+
+{{!--
+<!-- LOGIN FORM -->--}}
+<div class="login-page">
+    <div class="form">
+        <h2>Thank You For Being A Contrubitor!</h2>
+        <form class="login-form" id="signup" name="signup" method="post" action="/signup">
+            <div class="form-row">
+                <div class="col-sm-6">
+                    <input id="email" class="text" name="email" type="email" placeholder="Email Address" />
+                </div>
+                <div class="col-sm-6">
+                    <input id="password" name="password" type="password" placeholder="Password" />
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-sm-12">
+                    <input id="name" name="name" type="text" placeholder="Name" />
+                </div>
+
+            </div>
+            <div class="form-row">
+                <div class="col-sm-6">
+                    <input id="title" name="title" type="text" placeholder="Title" />
+                </div>
+                <div class="col-sm-6">
+                    <input id="specality" type="text" placeholder="Specality" />
+                </div>
+            </div>
+            <button class="btn" type="submit" value="Sign Up">Sign Up</button>
+            <p class="message">Already have an account?
+                <a href="/signin">Sign in</a>
+            </p>
+        </form>
+    </div>
+</div>
+
+
+{{!-- footer --}}
+<footer class="footer">
+    <span class="text-muted"></span>
+    <a class="brand" href="/">Delta 32</a>
+    <a class="links"> || </a>
+    <a class="links" href="/careers">Careers </a>
+    </span>
+</footer>

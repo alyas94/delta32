@@ -1,0 +1,174 @@
+<link rel="stylesheet" href="assets/css/index.css">
+<link rel="stylesheet" href="assets/css/whatwedo.css">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+<script type="text/javascript" src="assets/js/index.js"></script>
+
+<div class="no-gutter">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand ml-1" href="/">Delta 32</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mr-4">
+                <li class="nav-item">
+                    <a class="nav-link" href="/api/videos/featured">Featured
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Categories
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/api/videos/category/medical">Medical</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/api/videos/category/environmental">Environmental</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/api/videos/category/lifestyle">Lifestyle</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="missionBtn">Mission</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#zbwid-2de1d0d9">Contact Us</a>
+                </li>
+            </ul>
+
+            <form class="form-inline my-2 my-lg-0">
+                <select class="search_bar" data-placeholder="Search" type="search" placeholder="Search" aria-label="Search" style="width: 200px">
+                    <option></option>
+                </select>
+                <button class="btn btn-sm btn-outline-success my-2 my-sm-0" id="nav_search_btn" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+    </nav>
+</div>
+{{!--carousel--}}
+<div class="row fullview">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner fullview">
+            <div class="carousel-item active">
+                {{!--slide 1--}}
+                <div id="welcome_slide">
+                    <div class="row">
+                        <div id="welcome_content" class="col-md-3">
+                            <h2 class="welcome_font_three">
+                                Delta 32:
+                                <br> A Free Video Platform To Educate About Health & Environmental Issues And Lifestyle.
+                            </h2>
+                            <h4 class="welcome_font_one">It's Like A Combination Of Youtube & WebMD</h4>
+                            <h6 class="welcome_font_one">But More Resourceful</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{!--slide 2--}}
+            <div class="carousel-item">
+                <div id="second_slide">
+                    <div class="row">
+                        <div class="col-md-6"></div>
+                        <div id="second_content" class="col-md-5">
+                            <h1 class="lobster">Learn About Lifestyle</h1>
+                            <h2 class="lobster">from certified nutrutionsts</h2>
+                            <br>
+                            <a href="/api/videos/category/lifestyle" class="lobster links">Click Here To Watch Videos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{!--slide 3--}}
+            <div class="carousel-item">
+                <div id="third_slide">
+                    <div class="row">
+                        <div id="third_content" class="col-md-12 text-center">
+                            <br>
+                            <br>
+                            <h1 class="shrikhand">It's not too late</h1>
+                            <h1 class="shrikhand">SAVE THE PLANET</h1>
+                            <br>
+                            <a href="/api/videos/category/environmental" class="shrikhand whiteLink">Click Here To Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    {{!--carousel ends--}}
+</div>
+
+
+{{!--What We Do--}}
+<section id="what-we-do">
+    <a name="mission"></a>
+    <div class="container-fluid we-do-container">
+
+        <h2 class="section-title mb-2 h1">What we do</h2>
+        <p class="text-center text-muted h5 card-text">OUR MISSION IS TO PROVIDE FREE MEDICAL ADVICE FROM REAL DOCTORS &
+            <br> "SAVE THE PLANET" TIPS FROM SCIENTISTS & RESEARCHERS.</p>
+
+        <div class="row mt-5">
+            <div class="col-sm-2"></div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <div class="card">
+                    <div class="card-block block-1">
+                        <h3 class="card-title">Find Contributors</h3>
+                        <p class="card-text">We find Professionals that are willing to help us with our cause, We look for Doctors, Nutrutionsts
+                            and Scientists.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <div class="card">
+                    <div class="card-block block-2">
+                        <h3 class="card-title">Verify Credentials</h3>
+                        <p class="card-text">We make sure the contributors are certified Doctors, Nutrutionsts & Scientist.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <div class="card">
+                    <div class="card-block block-3">
+                        <h3 class="card-title">Recording Videos</h3>
+                        <p class="card-text">We provide the tools needed for contributors to film these 5-10 min videos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <div class="card">
+                    <div class="card-block block-4">
+                        <h3 class="card-title">Bring Videos To You!</h3>
+                        <p class="card-text">Once we've verified the video content, we bring them to this site for you to watch for FREE!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{!--footer--}}
+<footer class="footer">
+    <span class="text-muted"></span>
+    <a class="brand" href="#">Delta 32</a>
+    <a class="links"> || </a>
+    <a class="links" href="/careers">Careers </a>
+    <a class="links" href="/dashboard">Contributors </a>
+    </span>
+</footer>

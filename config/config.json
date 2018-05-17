@@ -1,0 +1,26 @@
+{
+  "development": {
+    "port": 8889,
+    "username": "root",
+    "password": "root",
+    "database": "delta32_db",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "port": 8889,
+    "username": "root",
+    "password": "root",
+    "database": "delta32_db",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "port": 8889,
+    "username": "qlzq5c6evigafak0",
+    "password": "vuxgrgs6dowdggw0",
+    "database": "j1v2v0z4ph6ss0kz",
+    "host": "wm63be5w8m7gs25a.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "dialect": "mysql"
+  }
+}
